@@ -60,6 +60,14 @@ Terraform Cloud/Enterprise users should follow [this section](https://www.infrac
 
 **Required** GitHub token used to post comments, should be set to `${{ secrets.GITHUB_TOKEN }}` to use the default GitHub token available to actions (see example in the Usage section).
 
+### `TERRAFORM_BINARY`
+
+**Optional** Used to change the path to the terraform binary. The [Infracost docker image](https://github.com/infracost/infracost/blob/master/Dockerfile) has the latest stable versions of terraform and terragrunt; you can set this environment variable to:
+- `terraform` (default, version 0.14.4)
+- `terraform_0.12.30`
+- `terraform_0.13.6`
+- `terragrunt` (version 0.26.7)
+
 ### `GITHUB_API_URL`
 
 **Optional** GitHub API URL, defaults to https://api.github.com.
