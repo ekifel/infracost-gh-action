@@ -42,4 +42,5 @@ runs:
     - ${{ inputs.usage_file }}
     - ${{ inputs.config_file }}
     - ${{ inputs.percentage_threshold }}
+    - ${{ inputs.post_condition }}
 
