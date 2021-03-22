@@ -26,8 +26,7 @@ inputs:
     default: 0
   post_condition:
     description: Hello
-    required: false
-    default: ""
+    required: true
 outputs:
   total_monthly_cost:
     description: The new total monthly cost estimate.
