@@ -24,6 +24,10 @@ inputs:
     description: The absolute percentage threshold that triggers a pull request comment with the diff. Defaults to 0, meaning that a comment is posted if the cost estimate changes. For example, set to 5 to post a comment if the cost estimate changes by more than plus or minus 5%.
     required: false
     default: 0
+  post_condition:
+    description: Hello
+    required: false
+    default: ""
 outputs:
   total_monthly_cost:
     description: The new total monthly cost estimate.
